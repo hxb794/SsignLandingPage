@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scandinavian Sign</title>
+<style>
+  :root{
+    --bg:#0c0c0c;
+    --ink:#f3efe6;
+    --gold:#cba135;
+    --line:#2a2a2a;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html,body{height:100%;}
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:'Helvetica Neue', Arial, sans-serif;
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    padding:24px;
+  }
+  .card{
+    max-width:420px;
+    width:100%;
+    text-align:center;
+  }
+  .logo{
+    width:140px;
+    height:140px;
+    border-radius:50%;
+    object-fit:cover;
+    margin:0 auto 24px;
+    display:block;
+  }
+  h1{
+    font-size:1.9rem;
+    font-weight:800;
+    letter-spacing:-0.01em;
+    margin-bottom:6px;
+  }
+  .tagline{
+    font-size:0.8rem;
+    letter-spacing:0.18em;
+    text-transform:uppercase;
+    color:var(--gold);
+    margin-bottom:32px;
+  }
+  .tagline::after{
+    content:"";
+    display:block;
+    width:48px;
+    height:2px;
+    margin:14px auto 0;
+    background:var(--gold);
+  }
+  .details{
+    font-size:0.98rem;
+    line-height:2;
+    border-top:1px solid var(--line);
+    padding-top:24px;
+    display:flex;
+    flex-direction:column;
+    gap:4px;
+  }
+  .details a{
+    color:var(--ink);
+    text-decoration:none;
+    border-bottom:1px solid var(--line);
+    transition:border-color 0.2s, color 0.2s;
+    padding-bottom:1px;
+  }
+  .details a:hover{
+    border-color:var(--gold);
+    color:var(--gold);
+  }
+  .msg-row{
+    color:var(--ink);
+  }
+  .msg-row a{
+    border-bottom:1px solid var(--line);
+  }
+  .msg-row a:hover{
+    border-color:var(--gold);
+    color:var(--gold);
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <h1>Scandinavian Sign</h1>
+    <p class="tagline">Allt inom tryck</p>
+    <div class="details">
+      <a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x465f757d51b86ec9:0x3c1274ba4a6edb69?sa=X&ved=1t:8290&ictx=111" target="_blank" rel="noopener">Vårbergsplan 27, 127 43 Skärholmen</a>
+      <a href="tel:+4687107531">08-710 75 31 (ring)</a>
+      <a href="sms:+46737090494">073-709 04 94 (sms)</a>
+      <a href="https://wa.me/46737090494" target="_blank" rel="noopener">073-709 04 94 (whatsapp)</a>
+      <a href="mailto:info@scandinaviansign.se">info@scandinaviansign.se</a>
+      <a href="https://app.swish.nu/1/p/sw/?sw=1236198097&msg=&src=qr">Swish: 123 619 80 97</a>
+    </div>
+  </div>
+</body>
+</html>
